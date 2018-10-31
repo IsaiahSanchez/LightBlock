@@ -7,8 +7,7 @@ public class ScorePieceHolder : MonoBehaviour {
     [SerializeField]
     private ScorePiece LeftLocation, RightLocation;
 
-    [SerializeField]
-    private float speed = 10f;
+    public float speed = 10f;
 
     Rigidbody2D myBody;
 
@@ -16,9 +15,8 @@ public class ScorePieceHolder : MonoBehaviour {
     void Awake () {
         myBody = GetComponent<Rigidbody2D>();
 
-        setBlockType(BlockType.BottomRight, BlockType.BottomLeft);
-        setColorsForObjects(new Color(1, 1, 0), new Color(0, 0, 1));
-
+        setBlockType(BlockType.TopLeft, BlockType.TopRight);
+        setColorsForObjects(new Color(0, 0, 0), new Color(0, 0, 0));
     }
 	
 	// Update is called once per frame
@@ -41,5 +39,17 @@ public class ScorePieceHolder : MonoBehaviour {
     {
         LeftLocation.blockType = leftType;
         RightLocation.blockType = rightType;
+    }
+
+    public BlockType getBlocktype(bool Left)
+    {
+        if (Left)
+        {
+            return LeftLocation.blockType;
+        }
+        else
+        {
+            return RightLocation.blockType;
+        }
     }
 }

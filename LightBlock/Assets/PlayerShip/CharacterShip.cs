@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class CharacterShip : MonoBehaviour {
 
+    public int Score = 0;
+    public int Strikes = 0;
+
     private Transform trans;
 
     private float rot;
     private float desiredRot;
 
-    public float speed = 100;
+    public float speed = 125;
     private bool shouldRotate = false;
 
 	// Use this for initialization
@@ -72,7 +75,7 @@ public class CharacterShip : MonoBehaviour {
         {
             rot -= (speed * Time.deltaTime);
         }
-        if (rot < desiredRot + 3 && rot > desiredRot - 3)
+        if (rot < desiredRot + 7 && rot > desiredRot - 7)
         {
             rot = desiredRot;
         }

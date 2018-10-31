@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Managers\ColorManager\colorManager.cs" />
     <Compile Include="Assets\Managers\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Managers\GamePlayManager\GameplayController.cs" />
     <Compile Include="Assets\Managers\GameScaler\GameScaler.cs" />
     <Compile Include="Assets\PlayerShip\CharacterShip.cs" />
     <Compile Include="Assets\PlayerShip\Piece\CharacterPiece.cs" />
@@ -69,16 +71,16 @@
     <Compile Include="Assets\ScorePieces\ScorePieceHolder\ScorePieceHolder.cs" />
     <Compile Include="Assets\ScorePieces\ScorePieceHolderCollector\ScorePieceHolderCollector.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Unity3dProjectsGitHub/LightBlock/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Unity3dProjectsGitHub/LightBlockGitHub/LightBlock/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity3dProjectsGitHub/LightBlock/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Unity3dProjectsGitHub/LightBlockGitHub/LightBlock/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Unity3dProjectsGitHub/LightBlock/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Unity3dProjectsGitHub/LightBlockGitHub/LightBlock/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity3dProjectsGitHub/LightBlock/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Unity3dProjectsGitHub/LightBlockGitHub/LightBlock/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity3dProjectsGitHub/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

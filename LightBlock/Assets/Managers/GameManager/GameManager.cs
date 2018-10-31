@@ -5,9 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     public static GameManager instance;
 
+    public Color chosenTL, chosenTR, chosenBR, chosenBL;
+
 	// Use this for initialization
 	void Awake () {
         MakeSingleton();
+        chosenTL = new Color(0, 1, 0);
+        chosenTR = new Color(1, 0, 0);
+        chosenBR = new Color(1, 1, 0);
+        chosenBL = new Color(0, 0, 1);
     }
 	
 	// Update is called once per frame

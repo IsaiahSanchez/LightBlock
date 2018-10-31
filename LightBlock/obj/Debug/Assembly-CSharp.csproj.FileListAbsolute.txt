@@ -168,3 +168,7 @@ D:\Unity3dProjectsGitHub\LightBlock\Temp\bin\Debug\UnityEngine.ClusterRendererMo
 D:\Unity3dProjectsGitHub\LightBlock\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Unity3dProjectsGitHub\LightBlock\obj\Debug\Assembly-CSharp.dll
 D:\Unity3dProjectsGitHub\LightBlock\obj\Debug\Assembly-CSharp.pdb
+D:\Unity3dProjectsGitHub\LightBlockGitHub\LightBlock\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Unity3dProjectsGitHub\LightBlockGitHub\LightBlock\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\Unity3dProjectsGitHub\LightBlockGitHub\LightBlock\obj\Debug\Assembly-CSharp.dll
+D:\Unity3dProjectsGitHub\LightBlockGitHub\LightBlock\obj\Debug\Assembly-CSharp.pdb

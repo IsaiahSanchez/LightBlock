@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CharacterPiece : MonoBehaviour {
 
+    [SerializeField]
+    CharacterShip parentShip;
+
     public Color myColor;
     public BlockType myType;
 
@@ -14,25 +17,28 @@ public class CharacterPiece : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D target)
-    { 
+    {
         if (target.tag == "ScorePiece")
         {
             if (target.GetComponent<ScorePiece>().blockType != BlockType.None)
             {
                 if (myType == target.GetComponent<ScorePiece>().blockType)
                 {
-                    Debug.Log("Correct");
+                    parentShip.Score += 10;
                 }
                 else
                 {
-                    Debug.Log("Incorrect");
+                    parentShip.Strikes += 1;
                 }
+                Destroy(target.gameObject);
             }
             else
             {
-
+                Destroy(target.gameObject);
             }
+        }
+        
         }
     }
 
-}
+
