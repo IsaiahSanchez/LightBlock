@@ -10,10 +10,23 @@ public class CharacterPiece : MonoBehaviour {
     public Color myColor;
     public BlockType myType;
 
+    
+
     public void initialize(BlockType inputType, Color inputColor)
     {
         myType = inputType;
         myColor = inputColor;
+    }
+
+
+
+    private void strike()
+    {
+        if (parentShip.hasBeenHurtRecently == false)
+        {
+            parentShip.Strikes++;
+            parentShip.hasBeenHurtRecently = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D target)
@@ -28,7 +41,7 @@ public class CharacterPiece : MonoBehaviour {
                 }
                 else
                 {
-                    parentShip.Strikes += 1;
+                    strike();
                 }
                 Destroy(target.gameObject);
             }

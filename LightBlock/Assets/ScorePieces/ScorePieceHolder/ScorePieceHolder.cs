@@ -31,8 +31,11 @@ public class ScorePieceHolder : MonoBehaviour {
 
     public void setColorsForObjects(Color leftColor, Color rightColor)
     {
-        LeftLocation.GetComponent<SpriteRenderer>().color = leftColor;
-        RightLocation.GetComponent<SpriteRenderer>().color = rightColor;
+        if (LeftLocation != null && RightLocation != null)
+        {
+            LeftLocation.GetComponent<SpriteRenderer>().color = leftColor;
+            RightLocation.GetComponent<SpriteRenderer>().color = rightColor;
+        }
     }
 
     public void setBlockType(BlockType leftType, BlockType rightType)

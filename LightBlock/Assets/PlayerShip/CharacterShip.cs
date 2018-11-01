@@ -15,8 +15,12 @@ public class CharacterShip : MonoBehaviour {
     public float speed = 125;
     private bool shouldRotate = false;
 
-	// Use this for initialization
-	void Start () {
+    public bool hasBeenHurtRecently = false;
+    private float howLongSinceHurt = 0f;
+    private float invincibilityTime = .5f;
+
+    // Use this for initialization
+    void Start () {
         rot = 0f;
         desiredRot = 0f;
         trans = transform;
@@ -30,7 +34,8 @@ public class CharacterShip : MonoBehaviour {
         {
             rotate();
         }
-        else
+
+        if (rot <= desiredRot + 20 && rot >= desiredRot - 20)
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -42,11 +47,23 @@ public class CharacterShip : MonoBehaviour {
                 setRotationDirection(1f);
             }
         }
+
+        if (hasBeenHurtRecently == true)
+        {
+            howLongSinceHurt += Time.deltaTime;
+            Debug.Log(howLongSinceHurt);
+            if (howLongSinceHurt > invincibilityTime)
+            {
+                howLongSinceHurt = 0;
+                hasBeenHurtRecently = false;
+            }
+        }
+
     }
 
     public void setRotationDirection(float direction)
     {
-        if (shouldRotate == false)
+        if (rot <= desiredRot + 20 && rot >= desiredRot - 20)
         {
             desiredRot = desiredRot + (90 * direction);
         }
@@ -75,7 +92,8 @@ public class CharacterShip : MonoBehaviour {
         {
             rot -= (speed * Time.deltaTime);
         }
-        if (rot < desiredRot + 7 && rot > desiredRot - 7)
+
+        if (rot < desiredRot + 7 && rot > desiredRot - 7) 
         {
             rot = desiredRot;
         }
