@@ -19,16 +19,6 @@ public class CharacterPiece : MonoBehaviour {
     }
 
 
-
-    private void strike()
-    {
-        if (parentShip.hasBeenHurtRecently == false)
-        {
-            parentShip.Strikes++;
-            parentShip.hasBeenHurtRecently = true;
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "ScorePiece")
@@ -37,11 +27,11 @@ public class CharacterPiece : MonoBehaviour {
             {
                 if (myType == target.GetComponent<ScorePiece>().blockType)
                 {
-                    parentShip.Score += 10;
+                    parentShip.AddScore();
                 }
                 else
                 {
-                    strike();
+                    parentShip.AddStrike();
                 }
                 Destroy(target.gameObject);
             }
