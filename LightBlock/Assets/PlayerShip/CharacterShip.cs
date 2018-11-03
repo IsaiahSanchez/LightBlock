@@ -29,6 +29,8 @@ public class CharacterShip : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
+        
+        GameplayController.instance.setScoreandStrikes(Score, Strikes);
         checkIfShouldRotate();
         if (shouldRotate)
         {
