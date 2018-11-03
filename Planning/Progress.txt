@@ -1,0 +1,21 @@
+immediate "bugs":
+use new scene loader thingy
+get rid of debug shiz
+
+
+Todo:
+set up main menu -- sorta done
+set up pause menu -- sorta done
+make player fail after 3 misses -- sorta done
+make game speed up based on matches -- sorta done
+fine tune turning speed
+
+
+
+long term todo:
+make pieces "glow"
+make pieces get brighter whenever a new piece is matched
+make "flip" functionality
+make 15 levels
+make a character cockpit in center of object
+make there be collectable hats, colors, textures?

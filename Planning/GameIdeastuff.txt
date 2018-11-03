@@ -1,0 +1,5 @@
+start with just one color for 1 round
+get a second color for 2 rounds
+get a third color for 4 rounds
+get a fourth color for 8 rounds
+get the swapping ability for ever
