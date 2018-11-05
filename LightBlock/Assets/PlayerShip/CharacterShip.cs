@@ -42,11 +42,6 @@ public class CharacterShip : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            AddScore();
-        }
-
         checkCooldowns();
         checkCurrentMultiplier();
         checkIfShouldRotate();
@@ -141,7 +136,6 @@ public class CharacterShip : MonoBehaviour {
         if (hasBeenHurtRecently == true)
         {
             howLongSinceHurt += Time.deltaTime;
-            Debug.Log(howLongSinceHurt);
             if (howLongSinceHurt > invincibilityTime)
             {
                 howLongSinceHurt = 0;
@@ -153,7 +147,6 @@ public class CharacterShip : MonoBehaviour {
         if (hasScoredRecently == true)
         {
             howLongSinceScored += Time.deltaTime;
-            Debug.Log(howLongSinceScored);
             if (howLongSinceScored > nonScoringTime)
             {
                 howLongSinceScored = 0;

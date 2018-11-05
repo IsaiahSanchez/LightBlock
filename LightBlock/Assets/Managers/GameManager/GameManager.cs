@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour {
 
     public Color chosenTL, chosenTR, chosenBR, chosenBL;
 
+    public GameType gameType = GameType.Endless;
+
 	// Use this for initialization
 	void Awake () {
         MakeSingleton();
@@ -37,3 +39,5 @@ public class GameManager : MonoBehaviour {
 }
 
 public enum BlockType {TopLeft,TopRight,BottomRight,BottomLeft,None}
+public enum SpawnLocation {Top,Right,Bottom,Left}
+public enum GameType {Endless, Level}

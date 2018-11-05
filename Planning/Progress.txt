@@ -5,7 +5,6 @@ get rid of debug shiz
 
 Todo:
 set up main menu -- sorta done
-set up pause menu -- sorta done
 make player fail after 3 misses -- sorta done
 make game speed up based on matches -- sorta done
 fine tune turning speed
