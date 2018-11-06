@@ -61,12 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LevelSequence\SpawningManager\SpawnTrigger.cs" />
+    <Compile Include="Assets\LevelSequence\SpawningManager\TimingBar.cs" />
     <Compile Include="Assets\Managers\ColorManager\colorManager.cs" />
     <Compile Include="Assets\Managers\GameManager\GameManager.cs" />
     <Compile Include="Assets\Managers\GamePlayManager\GameplayController.cs" />
     <Compile Include="Assets\Managers\GameScaler\GameScaler.cs" />
-    <Compile Include="Assets\Managers\SpawningManager\SpawnTrigger.cs" />
-    <Compile Include="Assets\Managers\SpawningManager\TimingBar.cs" />
+    <Compile Include="Assets\Managers\MenuManager\MenuManager.cs" />
     <Compile Include="Assets\PlayerShip\CharacterShip.cs" />
     <Compile Include="Assets\PlayerShip\Piece\CharacterPiece.cs" />
     <Compile Include="Assets\ScorePieces\ScorePiece\ScorePiece.cs" />

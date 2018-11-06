@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour {
 
     public GameType gameType = GameType.Endless;
 
+    public GameObject selectedLevel;
+
+    public bool isMuted = false;
+
 	// Use this for initialization
 	void Awake () {
         MakeSingleton();
